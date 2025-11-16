@@ -8,7 +8,8 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Aulas Particulares Online e Presenciais na Região de Novo Hamburgo
+              Aulas Particulares Online (e Presenciais na Região de Novo
+              Hamburgo)
             </h1>
             <p className="hero-description">
               Domine o idioma francês com aulas personalizadas, flexíveis e
@@ -30,8 +31,8 @@ const Hero = () => {
             </div>
             <div className="hero-stats">
               <div className="stat">
-                <div className="stat-number">100%</div>
-                <div className="stat-label">Online</div>
+                <div className="stat-number">Material</div>
+                <div className="stat-label">Gratuito</div>
               </div>
               <div className="stat">
                 <div className="stat-number">Flexível</div>
@@ -48,7 +49,9 @@ const Hero = () => {
               <div className="card-content">
                 <div className="card-icon">📚</div>
                 <h3>Aulas Interativas</h3>
-                <p>Material didático moderno e material gratuito</p>
+                <p>
+                  Material didático, moderno e gratuito disponibilizado ao aluno
+                </p>
               </div>
             </div>
           </div>
