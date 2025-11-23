@@ -1,39 +1,52 @@
-import React from 'react'
-import './Services.css'
+import React from "react";
+import "./Services.css";
 
 const Services = () => {
   const services = [
     {
-      icon: '🗣️',
-      title: 'Conversação',
-      description: 'Pratique sua fala e desenvolva fluência através de diálogos temáticos e situações do dia a dia.'
+      icon: "🗣️",
+      title: "Conversação",
+      description:
+        "Pratique sua fala e desenvolva fluência através de diálogos temáticos e situações do dia a dia.",
     },
     {
-      icon: '📖',
-      title: 'Gramática',
-      description: 'Domine as regras gramaticais de forma clara e prática, com exercícios contextualizados.'
+      icon: "📖",
+      title: "Gramática",
+      description:
+        "Domine as regras gramaticais de forma clara e prática, com exercícios contextualizados.",
     },
     {
-      icon: '📝',
-      title: 'Preparação para Exames',
-      description: 'Prepare-se para DELF, DALF, TCF e outros exames oficiais com material específico e simulados.'
+      icon: "📝",
+      title: "Preparação para Exames",
+      description:
+        "Prepare-se para DELF, DALF, TCF e outros exames oficiais com material específico e simulados.",
     },
     {
-      icon: '💼',
-      title: 'Francês para Negócios',
-      description: 'Aprenda o francês corporativo necessário para reuniões, apresentações e comunicação profissional.'
+      icon: "💼",
+      title: "Francês para Negócios",
+      description:
+        "Aprenda o francês corporativo necessário para reuniões, apresentações e comunicação profissional.",
     },
     {
-      icon: '🎯',
-      title: 'Aulas para Iniciantes',
-      description: 'Comece do zero com uma base sólida, aprendendo pronúncia, vocabulário essencial e estruturas básicas.'
+      icon: "🎯",
+      title: "Aulas para Iniciantes",
+      description:
+        "Comece do zero com uma base sólida, aprendendo pronúncia, vocabulário essencial e estruturas básicas.",
     },
     {
-      icon: '🎨',
-      title: 'Cultura Francesa',
-      description: 'Conheça a rica cultura francesa através da literatura, cinema, música e tradições.'
-    }
-  ]
+      icon: "🎨",
+      title: "Cultura Francesa",
+      description:
+        "Conheça a rica cultura francesa através da literatura, cinema, música e tradições.",
+    },
+    {
+      icon: "🌐",
+      title: "Tradutor e Intérprete",
+      description:
+        "Serviços de tradução simultânea e consecutiva para garantir comunicação clara e precisa em reuniões, apresentações, negociações e eventos multilíngues.",
+      featured: true,
+    },
+  ];
 
   return (
     <section id="servicos" className="section services">
@@ -44,7 +57,10 @@ const Services = () => {
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
-            <div key={index} className="service-card">
+            <div
+              key={index}
+              className={`service-card ${service.featured ? "featured" : ""}`}
+            >
               <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
@@ -53,8 +69,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
-
+export default Services;

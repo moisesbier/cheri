@@ -32,7 +32,15 @@
 }
 
 .logo-icon {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 24px;
+  height: 18px;
+  border-radius: 2px;
 }
 
 .logo-text {
