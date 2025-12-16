@@ -8,8 +8,8 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Aulas Particulares Online (e Presenciais na Região de Novo
-              Hamburgo)
+              Aulas de Francês Particulares Online (e Presenciais na Região de
+              Novo Hamburgo)
             </h1>
             <p className="hero-description">
               Domine o idioma francês com aulas personalizadas, flexíveis e
